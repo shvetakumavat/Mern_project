@@ -1,0 +1,21 @@
+{
+  "name": "waghur",
+  "version": "1.0.0",
+  "description": "",
+ 
+  "main": "server.js",
+  "scripts": {
+    "start": "node Backend/server.js",
+    "serve": "nodemon Backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node Backend/seederScript.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "react-router-dom": "^6.2.1"
+  }
+}

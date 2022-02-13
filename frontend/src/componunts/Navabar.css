@@ -1,0 +1,84 @@
+.navbar{
+    width:100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+}
+
+.navbar__log h2{
+    color: aliceblue;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.navbar__links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar__links > li{
+    padding-left: 1.5rem;
+}
+
+.navbar__links > li >a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.navbar__links >li > a > span{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+.cart__Link{
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+.cart__Link:hover{
+    background-color: rgb(220, 20, 143);
+    color: azure;
+}
+.cartlogo__badge{
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    margin-left:8px;
+    color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+.HBicon{
+    width:50px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+.HBicon >div{
+    width: 100%;
+    height: 3px;
+    background-color: aliceblue;
+}
+
+@media (max-width:960px) {
+    .navbar__links{
+        display: none;
+    }
+    .HBicon{
+        display:flex;
+    }
+    
+}
